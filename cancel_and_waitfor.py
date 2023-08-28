@@ -14,8 +14,8 @@ async def main():
         await asyncio.wait_for(a, timeout=5)
     except TimeoutError:
         print('deadline reached !')
-        print(f'was task cancelled? {a.cancelled()}')
+
+    print(f'was task cancelled? {a.cancelled()}')
 
 
 asyncio.run(main())
-
